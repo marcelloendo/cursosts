@@ -32,8 +32,8 @@ public class Address implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "city_id")
 	private City city;
-
-	private Address() {
+	
+	public Address() {
 	}
 
 	public Address(Integer id, String logradouro, String numero, String complemento, String bairro, String cep,
